@@ -3,6 +3,7 @@
 # Permutations are printed in a lexicographic sorted order. So, if the input iterable is sorted, the permutation tuples will be produced in a sorted order.
 
 from itertools import permutations
+
 print(permutations(['1','2','3']))
 print(list(permutations(['1','2','3'])))
 print(list(permutations(['1','2','3'], 2)))
