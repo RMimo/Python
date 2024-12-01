@@ -69,13 +69,13 @@ def assigment_operators(operation: str, a: int = 10, b: int = 3):
         b <<= a
         return print('b <<= a:', b)
     
-    elif operation == ":=":
-        # Walrus Operator
-        # This operator is useful when you need to assign and use a variable in the same expression, 
-        # improving code readability and reducing repetition.
+    # elif operation == ":=":
+    #     # Walrus Operator
+    #     # This operator is useful when you need to assign and use a variable in the same expression, 
+    #     # improving code readability and reducing repetition.
 
-        x := a
-        return print('x := a:', x)
+    #     x := a
+    #     return print('x := a:', x)
 
 
 assigment_operators("=", 10, 3)
@@ -89,6 +89,6 @@ assigment_operators("**=", 10, 3)
 assigment_operators("&=", 5, 3) # 5 in binary = 101, 3 in binary = 011. Result: 1 (Binary: 001)
 assigment_operators("|=", 5, 3) # 5 in binary = 101, 3 in binary = 011. Result: 7 (Binary: 111)
 assigment_operators("^=", 5, 3) # 5 in binary = 101, 3 in binary = 011. Result: 6 (Binary: 110)
-assigment_operators(">>=", 16, 3) # 16 in binary = 10000. Result: 2 (Binary: 10)
-assigment_operators("<<=", 16, 3) # 16 in binary = 10000. Result: 2 (Binary: 10)
-assigment_operators(":=", 16, 3) 
+assigment_operators(">>=", 3, 16) # 16 in binary = 10000. Result: 2 (Binary: 10)
+assigment_operators("<<=", 3, 3) # 3 in binary = 11. Result: 24 (Binary: 11000)
+# assigment_operators(":=", 16, 3) 
